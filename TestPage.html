@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Learners module</h2>
+    <div class="list">
+      <div class="form-element">
+        <input type="checkbox" name="platform" value="introduction" id="introduction">
+        <label for="introduction">
+          <div class="icon">
+            <i class="fa fa-interest"></i>
+          </div>
+          <div class="title">Introduction</div>
+        </label>
+
+        <div class="nested-tabs">
+          <div class="form-element">
+            <input type="checkbox" name="platform" value="introduction1" id="introduction1">
+            <label for="introduction1">
+              <div class="icon">
+                <i class="fa fa-file"></i>
+              </div>
+              <div class="title">Introduction 1</div>
+              <input type="file" name="file1" id="file1" class="file-input">
+            </label>
+          </div>
+
+          <div class="form-element">
+            <input type="checkbox" name="platform" value="introduction2" id="introduction2">
+            <label for="introduction2">
+              <div class="icon">
+                <i class="fa fa-file"></i>
+              </div>
+              <div class="title">Introduction 2</div>
+              <input type="file" name="file2" id="file2" class="file-input">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle tab interactions
+    const parentTab = document.getElementById('introduction');
+    const nestedTabs = document.querySelector('.nested-tabs');
+
+    parentTab.addEventListener('click', (event) => {
+      if (event.target.checked) {
+        nestedTabs.style.display = 'block';
+      } else {
+        nestedTabs.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
