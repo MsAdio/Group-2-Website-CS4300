@@ -30,6 +30,24 @@
         .week-tile {
             background-color: #f0f0f0;
         }
+                /* Style for the button */
+        .button {
+            display: block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF; /* You can change the color */
+            color: #fff; /* Text color */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        /* Hover effect */
+        .button:hover {
+            background-color: #0056b3; /* Change to a darker shade on hover */
+        }
     </style>
 </head>
 
@@ -38,6 +56,7 @@
 
     <div class="tile" id="syllabus" onclick="loadSyllabus()">
             <h2>Contributors</h2>
+            <p><a href="contributors.html">Contributors</a></p>
 
         </div>
 
@@ -123,7 +142,7 @@
     <script>
         function loadCollaborators() {
             // You can provide a link to the Word document for download
-            <a href="contributors.html">Collaborators</a>
+            window.location.href = '"contributors".html';
         }
 
         function loadSyllabus() {
