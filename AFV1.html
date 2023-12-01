@@ -37,7 +37,7 @@
     <h1>Web Programming</h1>
 
     <div class="container">
-        <div class="tile" id="syllabus" onclick="loadSyllabus()">
+        <div class="tile" id="syllabus" onclick="loadCollaborators()">
             <h2>Collaborators</h2>
         </div>
 
@@ -46,10 +46,10 @@
             <div id="course-content-container" class="container" >
                 <!-- Week 1 -->
                 <div class="tile week-tile">
-                    <h3>Week 1</h3>
+                    <h3>Introduction</h3>
                     <div id="week1-content" style="display: none;">
                         <!-- Add Week 1 content here -->
-                        <p><a href="module1.html">Module 1</a></p>
+                        <p><a href="module1.html">Syllabus</a></p>
                     </div>
                 </div>
 
@@ -78,9 +78,14 @@
     </div>
 
     <script>
+        function loadCollaborators() {
+            // You can provide a link to the Word document for download
+            <a href="Collaborators.html">Collaborators</a>
+        }
+
         function loadSyllabus() {
             // You can provide a link to the Word document for download
-            window.location.href = '"C:\Users\Amol1\Downloads\CS4300 Syllabus(3) (3).doc".docx';
+            window.location.href = '"CS4300 Syllabus.doc".docx';
         }
 
         function toggleContent(elementId) {
