@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.11: animation.html -->
+<!-- Animation in CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Animation</title>
+      <style type = "text/css">
+         img
+         {
+            position: relative;
+            -webkit-animation: movingimage linear 10s 1s 2 alternate;
+            -moz-animation: movingimage linear 10s 1s 2 alternate;
+            animation: movingimage linear 10s 1s 2 alternate;
+         }
+         @-webkit-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @-moz-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @keyframes movingimage
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+      </style>
+   </head>
+   <body>
+      <img src = "Graduation cap.png" width = "138" height = "180"
+         alt = "Graduation cap">
+      <div></div>
+   </body>
+</html>
+<!DOCTYPE html>
+
+<!-- Linking to other web pages. -->
+<html>
+   
+<head>
+      <meta charset = "utf-8">
+      <title>Absolute Positioning</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+       
+      </style>
+   </head>
+   <head>
+      <meta charset = "utf-8">
+      <title>Linking External Style Sheet</title>
+      <Link rel = "stylesheet" type = "text/css"
+	href = "style.css">
+   </head>
+
+   <body>
+   
+      <div id="content-container">
+          <p class="text">Class Of 2023</p>
+      </div>
+  
+
+      <h1>Here are my favorite sites:</h1>
+      <p><strong>Click a name to visit that site.</strong></p>
+
+      <!-- create four text hyperlinks -->
+      <p><a href = "http://www.facebook.com">Facebook</a></p>
+      <p><a href = "http://www.twitter.com">Twitter</a></p>
+      <p><a href = "http://www.fourquare.com">Foursquare</a></p>
+      <p><a href = "http://www.google.com">Google</a></p>
+      <p> <img src = "Graduation cap.png" width = "92" height = "120">
+      <ol>
+          <!-- list -->
+          <li><a href = "https://www.youtube.com">YouTube</a>
+      <h2></h2>
+   </body>
+ <body>
+      <!-- the <table> tag opens a table -->
+      <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong> Table of Laptops and 
+		    their Prices </strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+           
+            </tr>
+         </tbody>
+      </table>
+   </body>
+
+</html>
+<!-- Media queries in CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Media Queries</title>
+      <style type = "text/css">
+      p
+      { margin: 0.9em 0em; }
+      /* styles for smartphones with screen widths 480px or smaller */
+      @media handheld and (max-width: 480px), 
+         screen and (max-device-width: 480px), 
+         screen and (max-width: 480px) 
+      {
+         div {
+            -webkit-column-count: 1; 
+            column-count: 1; }
+      }
+      /* styles for devices with screen widths of 481px to 1024px */
+      @media only screen and (min-width: 481px) and 
+         (max-width: 1024px)
+      {
+         div {
+            -webkit-column-count: 2; 
+            column-count: 2;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      /* styles for devices with screen widths of 1025px or greater */
+      @media only screen and (min-width: 1025px)
+      {
+         div {
+            -webkit-column-count: 3; 
+            column-count: 3;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Computers, Hardware and Software</h1>
+      </header>
+      <div>
+         <p> My name is Charles Keller, and I am on the brink of a significant milestone in my academic journey. This fall, I am set to graduate with a Bachelor's degree in Computer Science, accompanied by a minor in Mathematics. My passion for the realm of technology and my dedication to learning have driven me to this point, and I am excited about the prospects that lie ahead.
+</p>
+         <p>As I reflect on my educational journey, I am inspired by the vast opportunities that the field of Computer Science offers. My experiences have not only been confined to the academic realm but have extended into the practical domains of inspection and manufacturing. This real-world exposure has enriched my understanding of how theoretical concepts translate into tangible applications, fostering a holistic approach to my learning.</p> 
+         <p>In addition to my academic pursuits, I am honored to have a background serving in the United States Marine Corps. This experience has instilled in me a sense of discipline, resilience, and a commitment to excellence, qualities that I carry with me into every facet of my life. My military background has not only shaped my character but has also provided me with unique perspectives that I believe contribute to my versatility as a student and future professional.</p> 
+         <p>Looking forward, my journey in academia does not conclude with my impending graduation. I am enthusiastic about returning next spring to embark on the next chapter of my educational voyage, pursuing a Master's degree in Artificial Intelligence. This field aligns seamlessly with my passion for exploring the frontiers of technology and harnessing its potential to drive innovation and positive change.
+</p>Beyond the confines of the classroom, I actively engage with various student organizations that complement my academic pursuits. Currently serving as the Vice President of the National Society of Black Engineers (NSBE) at the University of Houston-Downtown (UHD), I am dedicated to fostering an inclusive and supportive environment for fellow students interested in engineering. Additionally, my memberships in the Association for Computing Machinery (ACM) and the Computing Alliance of Hispanic-Serving Institutions (CAHSI) provide me with valuable opportunities for networking, collaboration, and staying abreast of the latest developments in the dynamic field of computer science.<p>
+</p>
+         <footer>
+            <em>
+         </footer>
+      </div>
+   </body>
+</html>
+<!DOCTYPE html>
+
+<!-- Fig 4.9: positioning.html -->
+<!-- Absolute positioning of elements. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Absolute Positioning</title>
+      <style type = "text/css">
+      .background_image   { position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 z-index: 1; }
+      .foreground_image   { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 2; }
+      .text    { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 3;
+                 font-size: 20pt;
+                 font-family: tahoma, geneva, sans-serif; } 
+      </style>
+   </head>
+   <body>
+      <p><img src = "background_image.png" class = "background_image"
+         alt = "First positioned image" /></p>
+      
+      <p><img src = "foreground_image.png" class = "foreground_image"
+         alt = "Second positioned image" /></p>
+      
+      <p class = "text">Positioned Text</p>
+   </body>
+</html>
+<html>
+<head>
+    <title>JavaScript </title>
+</head>
+<body>
+    <h1>The interesting world of computer science!</h1>
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+    <script>
+        // JavaScript code goes here
+        alert("This is the bio of Charles Keller web page!");
+    </script>
+</body>
+</html>
+
