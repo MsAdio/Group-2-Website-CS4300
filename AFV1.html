@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming with Professor Zhang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tile {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .week-tile {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Website</h1>
+
+    <div class="container">
+        <div class="tile" id="syllabus" onclick="loadSyllabus()">
+            <h2>Collaborators</h2>
+        </div>
+
+        <div class="tile" id="course-content" onclick="toggleContent('course-content')">
+            <h2>Learning Modules</h2>
+            <div id="course-content-container" class="container" style="display: none;">
+                <!-- Week 1 -->
+                <div class="tile week-tile">
+                    <h3>Week 1</h3>
+                    <div id="week1-content" style="display: none;">
+                        <!-- Add Week 1 content here -->
+                        Week 1 content goes here.
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="tile week-tile">
+                    <h3>Week 2</h3>
+                    <div id="week2-content" style="display: none;">
+                        <!-- Add Week 2 content here -->
+                        Week 2 content goes here.
+                    </div>
+                </div>
+
+                <!-- Repeat for other weeks -->
+
+                <!-- Week 14 -->
+                <div class="tile week-tile">
+                    <h3>Week 14</h3>
+                    <div id="week14-content" style="display: none;">
+                        <!-- Add Week 14 content here -->
+                        Week 14 content goes here.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile" id="grades" onclick="toggleContent('grades')">
+            <h2>Grades</h2>
+            <div id="grades-content" style="display: none;">
+                <!-- Add grades content here -->
+                Grades content goes here.
+            </div>
+        </div>
+
+        <div class="tile" id="exams" onclick="toggleContent('exams')">
+            <h2>Exams</h2>
+            <div id="exams-content" style="display: none;">
+                <!-- Add exams content here -->
+                Exams content goes here.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function loadSyllabus() {
+            // You can provide a link to the Word document for download
+            window.location.href = '"C:\Users\Amol1\Downloads\CS4300 Syllabus(3) (3).doc".docx';
+        }
+
+        function toggleContent(elementId) {
+            var contentElement = document.getElementById(elementId + '-content');
+            contentElement.style.display = (contentElement.style.display === 'none' || contentElement.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>
