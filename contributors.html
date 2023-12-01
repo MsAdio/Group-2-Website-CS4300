@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
     <title>Collaborators Website</title>
     <style>
         body {
@@ -15,6 +16,9 @@
             display: flex; 
             flex-wrap: wrap;
             justify-content: space-around;
+            background-image: url('group.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .tile {
@@ -23,6 +27,7 @@
             margin: 10px;
             padding: 15px;
             border: 1px solid #ddd;
+            background-color: rgba(81, 132, 186, 0.708);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             cursor: pointer;
         }
@@ -31,43 +36,47 @@
 
 <body>
     <h1>Collaborators Website</h1>
+ 
+    <div class="content">
+            <div class="container">
+            <!-- Member 1 -->
+            <a href="member1.php">
+                <div class="tile">
+                    <h2>Hanifa Ali</h2>
+                </div>
+            </a>
 
-    <div class="container">
-        <!-- Member 1 -->
-        <a href="member1.php">
-            <div class="tile">
-                <h2>Hanifa Ali</h2>
-            </div>
-        </a>
+            <!-- Member 2 -->
+            <a href="Charlespersonal.html">
+                <div class="tile">
+                    <h2>Charles Keller</h2>
+                </div>
+            </a>
 
-        <!-- Member 2 -->
-        <a href="Charlespersonal.html">
-            <div class="tile">
-                <h2>Charles Keller</h2>
-            </div>
-        </a>
+            <!-- Member 3 -->
+            <a href="ShrutiPersonalwebpage.html">
+                <div class="tile">
+                    <h2>Shruti Jadhav</h2>
+                </div>
+            </a>
 
-        <!-- Member 3 -->
-        <a href="ShrutiPersonalwebpage.html">
-            <div class="tile">
-                <h2>Shruti Jadhav</h2>
-            </div>
-        </a>
+            <!-- Member 4 -->
+            <a href="Member4/webpage.html">
+                
+                <div class="tile">
+                    <h2>Amy Dixon</h2>
+                </div>
+            </a>
 
-        <!-- Member 4 -->
-        <a href="Member4/webpage.html">
-            <div class="tile">
-                <h2>Amy Dixon</h2>
-            </div>
-        </a>
-
-        <!-- Member 5 -->
-        <a href="Fashwebpage.html">
-            <div class="tile">
-                <h2>Arielle Fashakin</h2>
-            </div>
-        </a>
+            <!-- Member 5 -->
+            <a href="Fashwebpage.html">
+                <div class="tile">
+                    <h2>Arielle Fashakin</h2>
+                </div>
+            </a>
+        </div>
     </div>
+   
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.content {
+    position: relative;  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Set the width of the div */
+    height: 200px; /* Set the height of the div */
+ /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-size: cover; /* This property ensures the background image covers the entire div */
+    background-position: center top; /* Center the background image at the top */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    z-index: 1;
+}
